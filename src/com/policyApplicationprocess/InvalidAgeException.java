@@ -2,12 +2,8 @@ package com.policyApplicationprocess;
 
 public class InvalidAgeException extends Exception {
 
-	private String message;
+	public InvalidAgeException(String msg) {
+		super(msg);
+	}
 	
-	public InvalidAgeException(String message) {
-		this.message = message;
-	}
-	public String getMessage() {
-		return this.message;
-	}
 }

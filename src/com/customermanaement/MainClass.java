@@ -15,10 +15,12 @@ public class MainClass {
 			int choice = scanner.nextInt();
 
 			switch(choice) {
-			case 1: customerManagement.addCustomer();
-			break;
-			case 2: customerManagement.updateCustomer();
-			break;
+			case 1: 
+				customerManagement.addCustomer();
+				break;
+			case 2: 
+				customerManagement.updateCustomer();
+				break;
 			case 3: 
 				System.out.println("enter cutsomer id");
 				int id = scanner.nextInt();
@@ -34,8 +36,9 @@ public class MainClass {
 					System.out.println(c.getMessage());
 				}
 				break;
-			case 5:System.out.println("exit!!!!!!!");
-			return;
+			case 5:
+				System.out.println("exit!!!!!!!");
+				return;
 			default :System.out.println("invalid choice");
 
 			}

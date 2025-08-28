@@ -7,7 +7,7 @@ public class Customer {
 	private int zipcode;
 	
 	
-	public Customer(int customerid, String name, String address, int zipcode) {
+	public Customer(int customerid, String name, String address, int zipcode) throws InvalidCustomerDataException {
 		if (customerid <= 0) {
             throw new InvalidCustomerDataException("Customer ID must be positive.");
         }

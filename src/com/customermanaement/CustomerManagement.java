@@ -24,8 +24,13 @@ public class CustomerManagement {
 		String address = scanner.next();
 		System.out.println("enetr zipcode");
 		int zipcode = scanner.nextInt();
+		try {
 		Customer customer = new Customer(id,name,address,zipcode);
 		list.add(customer);
+		}
+		catch(InvalidCustomerDataException i) {
+			System.out.println(i.getMessage());
+		}
 	}
 	public void deleteCustomer() throws CustomerNotFoundException {
 		Customer customer = null;

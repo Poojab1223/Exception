@@ -17,19 +17,19 @@ public class PremiumCalculator {
 	}
 	
 	// Method to calculate Health Insurance premium
-    public double calculateHealthInsurance(String healthCondition) throws DataNotFoundException {
-        if (healthCondition == null || healthCondition.isEmpty()) {
+    public double calculateHealthInsurance(Insurance insurance) throws DataNotFoundException {
+        if (insurance == null ){
             throw new DataNotFoundException("Health condition data missing.");
         }
         try {
-            if (healthCondition.equalsIgnoreCase("Good")) {
+            if (insurance.getHealthStatus().equalsIgnoreCase("Good")) {
                 return 5000;
-            } else if (healthCondition.equalsIgnoreCase("Average")) {
+            } else if (insurance.getHealthStatus().equalsIgnoreCase("Average")) {
                 return 7000;
-            } else if (healthCondition.equalsIgnoreCase("Poor")) {
+            } else if (insurance.getHealthStatus().equalsIgnoreCase("Poor")) {
                 return 10000;
             } else {
-                throw new CalculationException("Unknown health condition: " + healthCondition);
+                throw new CalculationException("Unknown health condition: " + insurance);
             }
         } catch (Exception e) {
             throw new CalculationException("Error in health insurance premium calculation: " + e.getMessage());

@@ -3,13 +3,13 @@ package com.premiumcalculation;
 public class MainClass {
 	public static void main(String[] args) {
 	PremiumCalculator calculator = new PremiumCalculator();
-	Insurance insurance = new Insurance(20, "life", "good", "car");
+	Insurance insurance = new Insurance(20, null,null, "car");
 
     try {
         double lifePremium = calculator.calculateLifeInsurance(insurance);
         System.out.println("Life Insurance Premium: " + lifePremium);
 
-        double healthPremium = calculator.calculateHealthInsurance("Average");
+        double healthPremium = calculator.calculateHealthInsurance(insurance);
         System.out.println("Health Insurance Premium: " + healthPremium);
 
         double vehiclePremium = calculator.calculateVehicleInsurance("car");

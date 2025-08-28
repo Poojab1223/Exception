@@ -1,4 +1,4 @@
-package com.customermanaement;
+package com.customermanagement;
 
 public class InvalidCustomerDataException extends RuntimeException{
 

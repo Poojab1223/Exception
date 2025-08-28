@@ -1,4 +1,4 @@
-package com.clainmanagement;
+package com.claimmanagement;
 
 public class FraudulentClaimException extends RuntimeException{
 

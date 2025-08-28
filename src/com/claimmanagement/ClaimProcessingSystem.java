@@ -1,4 +1,4 @@
-package com.clainmanagement;
+package com.claimmanagement;
 
 public class ClaimProcessingSystem {
 
@@ -19,6 +19,6 @@ public class ClaimProcessingSystem {
         }
 
         // If all checks pass
-        System.out.println("✅ Claim processed successfully for Policy ID: " + claim.getPolicyId());
+        System.out.println(" Claim processed successfully for Policy ID: " + claim.getPolicyId());
     }
 }

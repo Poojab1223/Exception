@@ -1,4 +1,4 @@
-package com.clainmanagement;
+package com.claimmanagement;
 
 import java.time.LocalDate;
 

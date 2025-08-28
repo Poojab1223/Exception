@@ -1,4 +1,4 @@
-package com.customermanaement;
+package com.customermanagement;
 
 import java.util.ArrayList;
 import java.util.List;

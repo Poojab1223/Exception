@@ -1,4 +1,4 @@
-package com.clainmanagement;
+package com.claimmanagement;
 
 public class InvalidClaimAmountException extends RuntimeException{
 

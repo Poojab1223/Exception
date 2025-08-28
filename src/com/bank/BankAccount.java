@@ -1,4 +1,6 @@
-package com;
+package com.bank;
+
+import com.basic.InsufficientFundsException;
 
 public class BankAccount {
 	private double balance;

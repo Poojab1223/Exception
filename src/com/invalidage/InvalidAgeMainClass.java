@@ -1,4 +1,4 @@
-package com;
+package com.invalidage;
 
 import java.util.Scanner;
 

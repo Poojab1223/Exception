@@ -1,4 +1,4 @@
-package com;
+package com.negativenumber;
 
 public class NegativeNumberException extends RuntimeException{
 	public NegativeNumberException(String message) {

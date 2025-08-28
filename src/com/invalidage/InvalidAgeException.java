@@ -1,4 +1,4 @@
-package com;
+package com.invalidage;
 
 public class InvalidAgeException extends RuntimeException{
 	public String messege;

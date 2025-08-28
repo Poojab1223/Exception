@@ -1,4 +1,4 @@
-package com;
+package com.basic;
 
 public class InsufficientFundsException extends Exception {
 	

@@ -1,6 +1,8 @@
-package com;
+package com.bank;
 
 import java.util.Scanner;
+
+import com.basic.InsufficientFundsException;
 
 public class BankMainClass {
 	public static void main(String[] args) {
